@@ -2,6 +2,7 @@ const fixedOptions = {
   appId: 'pl4CQ5I7JENG',
   apiKey: 'cf274226f2fc8ac66bb79f97db34f44f',
   container: document.querySelector('#address-input'),
+
 };
 
 const reconfigurableOptions = {
@@ -12,3 +13,9 @@ const reconfigurableOptions = {
 };
 const placesInstance = places(fixedOptions).configure(reconfigurableOptions);
 
+
+
+document.getElementById('cityButton').onclick = () => {
+  alert(document.getElementById('address-input').value)
+  
+}
